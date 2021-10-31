@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+<br />
+<h1><center>Welcome to the URL Shortner Web App</center></h1>
+<br />
+<form method='post' style="text-align: center;">
+<input type='text' name='original' placeholder='Enter original URL here'>
+<button>Shorten</button>
+</form>
+
+<br>
+<div style="text-align: center;">
+  <label id="short">{{ shortUrl }}</label>
+  <button onclick="copyEvent('short')">Copy</button>
+</div>
+
+{% endblock %}
